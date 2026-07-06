@@ -37,3 +37,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+// Thêm xử lý Form Liên Hệ động
+const contactForm = document.getElementById('contactForm');
+if(contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Cảm ơn bạn đã gửi ý kiến đóng góp! Ban quản trị Fashion World sẽ phản hồi lại qua Email sớm nhất.');
+        contactForm.reset(); // Xóa sạch dữ liệu đã gõ trên form
+    });
+}
