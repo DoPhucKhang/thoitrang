@@ -2,55 +2,189 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Chi Tiết Bài Viết</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Chi Tiết Bài Viết - Fashion World</title>
+    <link rel="stylesheet" href="./css/style.css">
     <style>
-        .comment-section { margin-top: 40px; background: #eee; padding: 20px; border-radius: 5px; }
-        #commentList { list-style: none; margin-top: 15px; }
-        #commentList li { background: #fff; padding: 10px; margin-bottom: 10px; border-left: 4px solid #ff4757; }
-        .related-links { margin-top: 30px; padding: 15px; background: #fff; border: 1px dashed #aaa; }
+        /* Định dạng riêng cho trang chi tiết & khung bình luận */
+        .article-content {
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .article-content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        .meta-info {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .article-body p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .related-box {
+            background: #fff;
+            padding: 20px;
+            border: 1px dashed #ff4757;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .related-box h3 {
+            color: #ff4757;
+            margin-bottom: 10px;
+        }
+        .related-box ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .related-box ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .related-box ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Khu vực comment phản hồi */
+        .comment-section {
+            background: #f1f1f1;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .comment-section h3 {
+            margin-bottom: 15px;
+            color: #222;
+        }
+        .form-group {
+            margin-bottom: 12px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn-comment {
+            background: #111;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-comment:hover {
+            background: #ff4757;
+        }
+        #commentList {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+        #commentList li {
+            background: #fff;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-left: 5px solid #ff4757;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>FASHION WORLD</h1>
+        <p>Chi tiết bài viết xu hướng & Phản hồi từ độc giả</p>
+    </header>
+
+    <!-- Thanh Menu Điều Hướng (Đã chuẩn hóa cho GitHub) -->
     <nav>
         <ul>
-            <li><a href="index.html">Trang Chủ</a></li>
-            <li><a href="news.html">Tin Tức</a></li>
-            <li><a href="events.html">Sự Kiện</a></li>
-            <li><a href="login.html">Đăng Nhập</a></li>
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li><a href="./news.html">Tin Tức & Xu Hướng</a></li>
+            <li><a href="./events.html">Sự Kiện</a></li>
+            <li><a href="./login.html">Đăng Nhập</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <article>
-            <h2>Xu hướng Clean Girl 2026: Đỉnh cao của sự tối giản</h2>
-            <p class="meta">Đăng ngày: 06/07/2026 | Tác giả: Fashion Admin</p>
-            <hr><br>
-            <p>Nội dung chi tiết bài viết ở đây... Bạn hãy tự chuẩn bị thêm các nội dung hình ảnh, video (movies) sinh động liên quan đến chủ đề thời trang để ghi điểm tối đa cho phần tiêu chí bổ sung của đề bài.</p>
+        
+        <!-- Nội dung bài viết chi tiết -->
+        <article class="article-content">
+            <h2>Xu hướng Clean Girl 2026: Đỉnh cao của sự tối giản sang trọng</h2>
+            <div class="meta-info">Đăng ngày: 06/07/2026 | Tác giả: Minh Tuấn | Chuyên mục: Xu hướng thế giới</div>
+            
+            <div class="article-body">
+                <p>Phong cách "Clean Girl" không còn là một trào lưu nhất thời mà đã chính thức trở thành một lối sống thời trang vững chắc trong năm 2026. Chìa khóa của phong cách này nằm ở sự gọn gàng, tôn vinh nét đẹp tự nhiên nhưng không hề đơn điệu.</p>
+                <p>Trang phục đặc trưng thường xoay quanh các gam trung tính như trắng, kem, ghi, kết hợp cùng những chiếc quần âu ống rộng tôn dáng và áo blazer thanh lịch. Sự tối giản này giúp người mặc toát lên phong thái tự tin, sang trọng mà không cần phô trương.</p>
+                <p>Để hoàn thiện outfit, các tín đồ thời trang thường kết hợp với một mái tóc búi mượt chỉnh chu, đi kèm khuyên tai kim loại vàng bo tròn tạo điểm nhấn nhẹ nhàng nhưng đầy cuốn hút.</p>
+            </div>
+
+            <!-- Khối liên kết bài viết liên quan (Yêu cầu đề bài) -->
+            <div class="related-box">
+                <h3>Có thể bạn quan tâm (Nội dung vừa xem):</h3>
+                <ul>
+                    <li><a href="./detail.html">Top 5 phụ kiện tối giản không thể thiếu trong tủ đồ năm nay</a></li>
+                    <li><a href="./detail.html">Cách chọn nước hoa phù hợp với phong cách Minimalist</a></li>
+                </ul>
+            </div>
         </article>
 
-        <div class="related-links">
-            <h3>Các bài viết liên quan bạn có thể thích:</h3>
-            <ul>
-                <li><a href="detail.html">Top 5 phụ kiện không thể thiếu trong tủ đồ tối giản</a></li>
-                <li><a href="detail.html">Cách phối đồ tone-sur-tone cực chuẩn</a></li>
-            </ul>
-        </div>
-
-        <div class="comment-section">
-            <h3>Bình luận & Phản hồi về bài viết</h3>
+        <!-- Khu vực bình luận / phản hồi ý kiến (Yêu cầu đề bài) -->
+        <section class="comment-section">
+            <h3>Bình luận & Phản hồi ý kiến</h3>
+            
             <form id="commentForm">
-                <input type="text" id="commentUser" placeholder="Tên của bạn" style="padding: 5px; width: 200px; margin-bottom: 10px;" required><br>
-                <textarea id="commentText" rows="3" placeholder="Nhập ý kiến của bạn về bài viết..." style="width: 100%; padding: 10px;" required></textarea><br>
-                <button type="submit" style="padding: 8px 15px; background: #111; color: #fff; border: none; cursor: pointer; margin-top: 5px;">Gửi bình luận</button>
+                <div class="form-group">
+                    <input type="text" id="commentUser" placeholder="Nhập tên của bạn..." required>
+                </div>
+                <div class="form-group">
+                    <textarea id="commentText" rows="4" placeholder="Chia sẻ cảm nghĩ của bạn về bài viết này..." required></textarea>
+                </div>
+                <button type="submit" class="btn-comment">Gửi bình luận</button>
             </form>
 
+            <!-- Danh sách các bình luận hiển thị động -->
             <ul id="commentList">
-                <li><strong>Khánh Linh:</strong> Bài viết rất hay và hữu ích!</li>
+                <li>
+                    <strong>Khánh Linh:</strong> Bài viết phân tích rất đúng xu hướng luôn ạ, mình cũng đang theo đuổi style này!
+                </li>
+                <li>
+                    <strong>Hoàng Nam:</strong> Quần ống rộng phối blazer đi làm bao sang chảnh, bài viết hữu ích lắm shop.
+                </li>
             </ul>
-        </div>
+        </section>
+
     </div>
 
-    <script src="js/main.js"></script>
+    <!-- Footer & Sitemap -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>© 2026 Fashion World Project</h3>
+                <p>Website thực hành HTML/CSS/JS</p>
+            </div>
+            <div class="sitemap">
+                <h4>Sitemap (Sơ đồ trang web)</h4>
+                <ul>
+                    <li><a href="./index.html">Trang Chủ</a></li>
+                    <li><a href="./news.html">Tin Tức & Xu Hướng</a></li>
+                    <li><a href="./events.html">Sự Kiện Thời Trang</a></li>
+                    <li><a href="./login.html">Khu vực Thành Viên</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Nhúng file JavaScript xử lý comment động -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
