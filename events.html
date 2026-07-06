@@ -55,6 +55,13 @@
         .status-ended {
             background: #a1a1a1;
         }
+
+    /* CSS nhanh bổ sung cho ảnh sự kiện nằm bên trái chữ */
+    .event-card { display: flex; gap: 20px; align-items: center; background: #fff; padding: 15px; border: 1px solid #ddd; margin-bottom: 20px; border-radius: 8px;}
+    .event-img-box { width: 25%; } /* Khung ảnh chiếm 25% chiều rộng */
+    .event-img-box img { width: 100%; height: 140px; object-fit: cover; border-radius: 6px; margin: 0; }
+    .event-info { width: 60%; }
+    .event-status-box { width: 15%; text-align: right; }
     </style>
 </head>
 <body>
@@ -84,36 +91,37 @@
         <h2>Tất Cả Sự Kiện</h2>
         <br>
 
-        <div class="event-list">
-            
-            <div class="event-card">
-                <div class="event-info">
-                    <span class="event-time">Thời gian: 15/07/2026 - 20/07/2026</span>
-                    <h3>Tuần lễ thời trang quốc tế Việt Nam (VIFW)</h3>
-                    <p>Địa điểm: Trung tâm Hội nghị Quốc gia. Cơ hội chiêm ngưỡng những thiết kế đỉnh cao đột phá từ các nhà mốt tên tuổi.</p>
-                </div>
-                <div class="event-status">Sắp Diễn Ra</div>
-            </div>
-            <div class="event-card">
-                <div class="event-info">
-                    <span class="event-time">Thời gian: 25/07/2026</span>
-                    <h3>Đêm hội Tri ân & Private Sale dành cho Thành Viên VIP</h3>
-                    <p>Địa điểm: Hệ thống cửa hàng toàn quốc. Ưu đãi giảm giá độc quyền lên đến 50% cùng quà tặng đặc biệt khi check-in bằng tài khoản thành viên.</p>
-                </div>
-                <div class="event-status">Đang Mở Đăng Ký</div>
-            </div>
-
-            <div class="event-card">
-                <div class="event-info">
-                    <span class="event-time">Thời gian: 15/06/2026</span>
-                    <h3>Workshop: Định hình phong cách cá nhân cùng Stylist</h3>
-                    <p>Sự kiện trực tuyến chia sẻ cách lựa chọn trang phục, cách phối màu ton-sur-ton phù hợp với vóc dáng của từng học viên.</p>
-                </div>
-                <div class="event-status status-ended">Đã Kết Thúc</div>
-            </div>
-
+      <div class="event-list">
+    
+    <div class="event-card">
+        <div class="event-img-box">
+            <img src="./images/event1.jpg" alt="Fashion Week">
+        </div>
+        <div class="event-info">
+            <span class="event-time">Thời gian: 15/07/2026 - 20/07/2026</span>
+            <h3>Tuần lễ thời trang quốc tế Việt Nam (VIFW)</h3>
+            <p>Địa điểm: Trung tâm Hội nghị Quốc gia. Cơ hội chiêm ngưỡng những thiết kế đỉnh cao đột phá từ các nhà mốt tên tuổi.</p>
+        </div>
+        <div class="event-status-box">
+            <span class="event-status">Sắp Diễn Ra</span>
         </div>
     </div>
+
+    <div class="event-card">
+        <div class="event-img-box">
+            <img src="./images/event2.jpg" alt="Private Sale">
+        </div>
+        <div class="event-info">
+            <span class="event-time">Thời gian: 25/07/2026</span>
+            <h3>Đêm hội Tri ân & Private Sale dành cho Thành Viên VIP</h3>
+            <p>Địa điểm: Hệ thống cửa hàng toàn quốc. Ưu đãi giảm giá độc quyền lên đến 50% khi check-in bằng tài khoản thành viên.</p>
+        </div>
+        <div class="event-status-box">
+            <span class="event-status">Đang Mở</span>
+        </div>
+    </div>
+
+</div>
 
     <footer>
         <div class="footer-content">
