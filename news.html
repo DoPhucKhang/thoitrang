@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin Tức & Xu Hướng Thời Trang</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Định dạng riêng cho trang tin tức */
+        .news-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Chia làm 2 cột: Cột tin tức chính và Cột danh mục bên phải */
+            gap: 30px;
+        }
+        .news-item {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        .news-item h3 {
+            margin-bottom: 10px;
+        }
+        .news-item h3 a {
+            color: #111;
+            text-decoration: none;
+        }
+        .news-item h3 a:hover {
+            color: #ff4757;
+        }
+        .news-meta {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .sidebar-box {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .sidebar-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .sidebar-box ul li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        .sidebar-box ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar-box ul li a:hover {
+            color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TIN TỨC & XU HƯỚNG</h1>
+        <p>Không gian cập nhật những phong cách thời trang mới nhất toàn cầu</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="news.html">Tin Tức & Xu Hướng</a></li>
+            <li><a href="events.html">Sự Kiện</a></li>
+            <li><a href="login.html">Đăng Nhập</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="news-container">
+            
+            <main>
+                <div class="news-item">
+                    <h3><a href="detail.html">Xu hướng thiết kế bền vững (Eco-Fashion) lên ngôi toàn cầu</a></h3>
+                    <div class="news-meta">Đăng ngày: 05/07/2026 | Chuyên mục: Thời trang quốc tế</div>
+                    <p>Các nhà mốt lớn tại Milan và Paris đang chuyển dịch mạnh mẽ sang việc sử dụng chất liệu tái chế và các quy trình sản xuất không gây hại cho môi trường...</p>
+                    <a href="detail.html" style="color: #ff4757; font-weight: bold; text-decoration: none;">Đọc tiếp &rarr;</a>
+                </div>
+
+                <div class="news-item">
+                    <h3><a href="detail.html">Sự trở lại mạnh mẽ của phong cách Y2K trong giới trẻ Việt</a></h3>
+                    <div class="news-meta">Đăng ngày: 02/07/2026 | Chuyên mục: Xu hướng giới trẻ</div>
+                    <p>Quần cạp trễ, áo croptop màu sắc sặc sỡ cùng kính râm bản to đang phủ sóng khắp các mạng xã hội của giới trẻ trong nước từ đầu mùa hè năm nay...</p>
+                    <a href="detail.html" style="color: #ff4757; font-weight: bold; text-decoration: none;">Đọc tiếp &rarr;</a>
+                </div>
+
+                <div class="news-item">
+                    <h3><a href="detail.html">Bí quyết phối đồ công sở thanh lịch nhưng không nhàm chán</a></h3>
+                    <div class="news-meta">Đăng ngày: 28/06/2026 | Chuyên mục: Mẹo mặc đẹp</div>
+                    <p>Làm thế nào để vừa giữ được nét nghiêm túc nơi văn phòng nhưng vẫn thể hiện được gu thẩm mỹ và cá tính riêng? Hãy cùng khám phá quy tắc phối 3 lớp màu cơ bản...</p>
+                    <a href="detail.html" style="color: #ff4757; font-weight: bold; text-decoration: none;">Đọc tiếp &rarr;</a>
+                </div>
+            </main>
+
+            <aside>
+                <div class="sidebar-box">
+                    <h3>Chuyên Mục Tin Tức</h3>
+                    <br>
+                    <ul>
+                        <li><a href="#">Thời trang Trong Nước</a></li>
+                        <li><a href="#">Thời trang Quốc Tế</a></li>
+                        <li><a href="#">Bộ Sưu Tập Mới</a></li>
+                        <li><a href="#">Phong Cách Sao (Celebrity Style)</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Bài Viết Xem Nhiều Nhất</h3>
+                    <br>
+                    <ul>
+                        <li><a href="detail.html">1. Cách chọn đồ phù hợp cho dáng người quả lê</a></li>
+                        <li><a href="detail.html">2. Phối phụ kiện túi xách sao cho sang chảnh?</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>© 2026 Fashion World Project</h3>
+                <p>Website thực hành HTML/CSS/JS</p>
+            </div>
+            <div class="sitemap">
+                <h4>Sitemap (Sơ đồ trang web)</h4>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="news.html">Tin Tức & Xu Hướng</a></li>
+                    <li><a href="events.html">Sự Kiện Thời Trang</a></li>
+                    <li><a href="login.html">Khu vực Thành Viên</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
